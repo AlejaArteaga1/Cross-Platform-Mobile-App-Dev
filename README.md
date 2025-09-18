@@ -27,7 +27,7 @@ This is my first React Native application created for CPAN 213 course.
 
 -Custom styling with StyleSheet
 
-## Development EnvironmentDevelopment Environment
+## Development Environment
 -Node.js: v20.17.0
 
 -React Native: 0.81.1  and React-Native-CLI: 2.0.1
