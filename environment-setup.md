@@ -35,14 +35,20 @@ Finally, I launched the Android emulator, ran the project, and confirmed that th
 
 ## Any deviations from the lab instructions
 Yes, there were a few deviations:
+
 -When running the EnvironmentTest app, I encountered an error related to Native Safe Area support. To fix it, I installed react-native-safe-area-context, which ensures that the app content is displayed properly and is not hidden by UI elements such as notches, status bars, or navigation bars.
+
 -For version control, I configured SSH keys entirely through the terminal. This was challenging because I was only familiar with using GitHub Desktop for push, pull, and commit operations. I had to learn how to generate SSH keys, add them to my GitHub account, and connect my local repository through the console. After some trial and error, I successfully set up SSH keys  and pushed my project to a remote repository, which was a valuable learning experience.
 
 ## Time taken for each major step
 -Installing the required softwares:  Apporximately 15 minutes waiting for the components to download, setup... 
+
 -Creating the android Virtual Device: Apporximately 15min
+
 -Creating and testing the modifications: Apporximately 1 hours (mostly spent troubleshooting the react-native-safe-area-context error)
+
 -Debbuging and Developer Tools: 15 minutes 
+
 -Version Control Setup: 1 hour (due to SSH key setup challenges)
 
 
