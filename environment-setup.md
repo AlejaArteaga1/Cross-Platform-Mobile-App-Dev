@@ -36,14 +36,17 @@ Finally, I launched the Android emulator, ran the project, and confirmed that th
 ## Any deviations from the lab instructions
 Yes, there were a few deviations:
 
--When running the EnvironmentTest app, I encountered an error related to Native Safe Area support. To fix it, I installed react-native-safe-area-context, which ensures that the app content is displayed properly and is not hidden by UI elements such as notches, status bars, or navigation bars.
+-When running the EnvironmentTest app, I encountered an error related to Native Safe Area support. To fix it, I installed `npm install react-native-safe-area-context`, which ensures that the app content is displayed properly and is not hidden by UI elements such as notches, status bars, or navigation bars.
 
--For version control, I configured SSH keys entirely through the terminal. This was challenging because I was only familiar with using GitHub Desktop for push, pull, and commit operations. I had to learn how to generate SSH keys, add them to my GitHub account, and connect my local repository through the console. After some trial and error, I successfully set up SSH keys  and pushed my project to a remote repository, which was a valuable learning experience.
+-For version control, I configured SSH keys entirely through the terminal using the command ssh-keygen -t ed25519. The ed25519 algorithm is a secure digital signature algorithm used for authentication between local and remote repositories such as GitHub. This step was challenging because I was previously only familiar with using GitHub Desktop for push, pull, and commit operations. After generating the keys, I obtained two files: a public key and a private key. The public key had to be added to my GitHub account, which allowed my local repository and the remote repository to establish a secure connection. Once the SSH configuration was complete, I tested the connection and confirmed it was successful.
+Finally, I was able to push my EnvironmentTest project to the remote repository using the following Git commands: git add . (to add the local changes), git commit -m "Commit message" (to save the changes with a descriptive message), git push(to upload the changes to GitHub)
+Although this process required some trial and error, it was a very valuable learning experience that helped me feel more confident using Git from the terminal.
+
 
 ## Time taken for each major step
 -Installing the required softwares:  Apporximately 15 minutes waiting for the components to download, setup... 
 
--Creating the android Virtual Device: Apporximately 15min
+-Creating the Android Virtual Device: Apporximately 15min
 
 -Creating and testing the modifications: Apporximately 1 hours (mostly spent troubleshooting the react-native-safe-area-context error)
 
