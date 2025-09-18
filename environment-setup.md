@@ -28,16 +28,21 @@ Experience:	Windows Feature Experience Pack 1000.26100.234.0
 -Android Studio: 21.0.7
 
 -VS Code: 1.104.0
+
 ## Setup steps you followed
-First I installed node.js version v20.17.0 after that I checked the npm version to see if it is compatible with the program i will run with the commands `node --version` and `npm--version`. Then we install react native CLI with the following commands: `npm install -g react-native-cli` and `npm install -g @react-native-community/cli`. In the third step we install Android studio with the default settings and we configured it with some require additionals tools that configure the screen, the images and some details. Following that we set the enviroment variables in my case for windows and finally we create our android virtual device with Pixel 4, API 33. We continue to create our project in visual studio code (which was already set up and I just added some useful extentions) however in this step I had to type a different command `npx @react-native-community/cli@latest init NewProject` which is used to create a new React Native project with the name that we desire sing the latest version of the React Native Community CLI.Then we start the emulator to create our enviroment.
+First, I installed Node.js v20.17.0 and verified the installation by running `node --version` and `npm--version`to ensure that the npm version was compatible (v8.0.0 or higher). Next, I installed the React Native CLI using: `npm install -g react-native-cli` and `npm install -g @react-native-community/cli`. After that, I installed Android Studio with the default settings and configured the required tools (Android SDK Platform 31 and 33, Build-Tools 33.0.0...). Then, I set the environment variables for Windows to allow proper communication with the Android SDK. Once the environment was ready, I created an Android Virtual Device (AVD) using Pixel 4 with API 33 as the system image. I then created my React Native project in Visual Studio Code. Although the lab instructions suggested a standard command, I had to use:`npx @react-native-community/cli@latest init NewProject` to make sure I used the latest version of the React Native Community CLI.
+Finally, I launched the Android emulator, ran the project, and confirmed that the environment was set up correctly.
+
 ## Any deviations from the lab instructions
-Yes, I needed to install `npm install react-native-safe-area-context` in the moment that i was going to run my application with the EnviromentTest App created because the console throws an error saying that the project did not have a Native Safe Area and was required to initialize the app in the correct way and in that way be able to see my aplication in the home screen. So with `react-native-safe-area-context` it helps to ensure that the app's content is visible and not hidden by the elemets that are not system UI elements like notches, status bars, navigation bars, or home indicators.
-At the moment as well to create the github repository with the SSH keys and use git by console (I used by the app) I had some troubles because everything was new for me and the commands did not work as expected at the moment to create the keys for both sides but finally I was able to do it and learn from the process.
+Yes, there were a few deviations:
+-When running the EnvironmentTest app, I encountered an error related to Native Safe Area support. To fix it, I installed react-native-safe-area-context, which ensures that the app content is displayed properly and is not hidden by UI elements such as notches, status bars, or navigation bars.
+-For version control, I configured SSH keys entirely through the terminal. This was challenging because I was only familiar with using GitHub Desktop for push, pull, and commit operations. I had to learn how to generate SSH keys, add them to my GitHub account, and connect my local repository through the console. After some trial and error, I successfully set up SSH keys  and pushed my project to a remote repository, which was a valuable learning experience.
+
 ## Time taken for each major step
 -Installing the required softwares:  Apporximately 15 minutes waiting for the components to download, setup... 
 -Creating the android Virtual Device: Apporximately 15min
--Creating and testing the modifications: Apporximately 1 hours due to the error that the console gives me regarding the `react-native-safe-area-context`
+-Creating and testing the modifications: Apporximately 1 hours (mostly spent troubleshooting the react-native-safe-area-context error)
 -Debbuging and Developer Tools: 15 minutes 
--Version Control Setup: 1.5 hours
+-Version Control Setup: 1 hour (due to SSH key setup challenges)
 
 
