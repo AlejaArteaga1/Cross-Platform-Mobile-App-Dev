@@ -31,7 +31,7 @@ Experience:	Windows Feature Experience Pack 1000.26100.234.0
 
 ## Setup steps you followed
 First, I installed Node.js v20.17.0 and verified the installation by running `node --version` and `npm--version`to ensure that the npm version was compatible (v8.0.0 or higher). Next, I installed the React Native CLI using: `npm install -g react-native-cli` and `npm install -g @react-native-community/cli`. After that, I installed Android Studio with the default settings and configured the required tools (Android SDK Platform 31 and 33, Build-Tools 33.0.0...). Then, I set the environment variables for Windows to allow proper communication with the Android SDK. Once the environment was ready, I created an Android Virtual Device (AVD) using Pixel 4 with API 33 as the system image. I then created my React Native project in Visual Studio Code. Although the lab instructions suggested a standard command, I had to use:`npx @react-native-community/cli@latest init NewProject` to make sure I used the latest version of the React Native Community CLI.
-Finally, I launched the Android emulator, ran the project, and confirmed that the environment was set up correctly.
+Finally, I launched the Android emulator, ran the project, and confirmed that the environment was set up correctly using the command `npx react-native run-android` that opens up the project.
 
 ## Any deviations from the lab instructions
 Yes, there were a few deviations:
